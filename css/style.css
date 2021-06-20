@@ -7,10 +7,12 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::before,
+*::after {
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 html {
@@ -23,10 +25,11 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 	color: #777;
+	box-sizing: border-box;
 }
 
 .wrapper {
-	padding:  30px;
+	padding:  3rem;
 }
 
 .header {
@@ -46,12 +49,12 @@ body {
 
 .logo-box {
 	position: absolute;
-	top: 40px;
-	left: 40px;
+	top: 4rem;
+	left: 4rem;
 }
 
 .logo {
-	height: 35px;
+	height: 3.5rem;
 }
 
 .logo-box:hover .logo {
@@ -71,7 +74,7 @@ body {
 	text-transform: uppercase;
 
 	backface-visibility: hidden;
-	margin-bottom: 60px;
+	margin-bottom: 6rem;
 }
 
 .heading-primary-main {
@@ -104,11 +107,11 @@ body {
 @keyframes moveInLeft {
 	0% {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-10rem);
 	}
 
 	80% {
-		transform: translateX(20px);
+		transform: translateX(2rem);
 	}
 
 	100% {
@@ -120,11 +123,11 @@ body {
 @keyframes moveInRight {
 	0% {
 		opacity: 0;
-		transform: translateX(100px);
+		transform: translateX(10rem);
 	}
 
 	80% {
-		transform: translateX(-20px);
+		transform: translateX(-2rem);
 	}
 
 	100% {
@@ -136,7 +139,7 @@ body {
 @keyframes moveInBottom {
 	0% {
 		opacity: 0;
-		transform: translateY(30px);
+		transform: translateY(3rem);
 	}
 
 	100% {
@@ -160,21 +163,21 @@ body {
 .btn:visited {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 15px 40px;
+	padding: 1.5rem 4rem;
 	display: inline-block;
-	border-radius: 100px;
+	border-radius: 10rem;
 	transition: all 200ms;
 	position: relative;
 }
 
 .btn:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+	transform: translateY(-.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -187,7 +190,7 @@ body {
 	display: inline-block;
 	height: 100%;
 	width: 100%;
-	border-radius: 100px;
+	border-radius: 10rem;
 	position: absolute;
 	top: 0;
 	left: 0;
